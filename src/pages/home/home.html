@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="dark">
     <ion-title>
       Proyecto Integrador
     </ion-title>
@@ -7,13 +7,68 @@
 </ion-header>
 
 <ion-content padding>
- 
-  <ion-content>
-    <ion-fab top right edge>
-      <button ion-fab mini><ion-icon name="add"></ion-icon></button>
-      <ion-fab-list>
-        <button ion-fab></button><ion-icon name="add-circle"></ion-icon>
-      </ion-fab-list>
-    </ion-fab>
+
+    <ion-slides pager>
+
+        <ion-slide style="background-color: green">
+          <h2>Slide 1</h2>
+        </ion-slide>
+      
+        <ion-slide style="background-color: blue">
+          <h2>Slide 2</h2>
+        </ion-slide>
+      
+        <ion-slide style="background-color: red">
+          <h2>Slide 3</h2>
+        </ion-slide>
+      
+      </ion-slides>
+    
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        {{ item }}
+      </ion-item>
+    </ion-list>
+
+  <ion-list>
+      <ion-item>
+        <h2>Ejemplo1</h2>
+        <p>Recordatorio</p>
+        <button ion-button clear item-end>Detalles</button>
+      </ion-item>
+    </ion-list>
+
+  <ion-list>
+      <ion-item>
+        <h2>Ejemplo2</h2>
+        <p>Recordatorio</p>
+        <button ion-button clear item-end>Detalles</button>
+      </ion-item>
+    </ion-list>
+
+    <ion-header>
+        <ion-toolbar>
+          <ion-buttons start>
+            <button ion-button icon-only>
+              <ion-icon name="create"></ion-icon>
+            </button>
+          </ion-buttons>
+          <ion-segment>
+            <ion-segment-button value="nuevo">
+              Nuevo
+            </ion-segment-button>
+            <ion-segment-button value="completados">
+              Completados
+            </ion-segment-button>
+          </ion-segment>
+          <ion-buttons end>
+            <button ion-button icon-only>
+              <ion-icon name="mas"></ion-icon>
+            </button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      
 
 </ion-content>

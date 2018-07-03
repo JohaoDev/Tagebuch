@@ -1,6 +1,6 @@
 {
   "name": "YaviracProyecto",
-  "app_id": "",
+  "app_id": "cb72fa7c",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
