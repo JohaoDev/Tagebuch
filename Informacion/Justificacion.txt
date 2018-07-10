@@ -1,0 +1,20 @@
+JUSTIFICACIÓN
+
+El proyecto se basa en una aplicación móvil para dispositivos Androide que nos 
+ayudará y nos permitirá organizar las tareas de un estudiante, mediante 
+construcción de un cuaderno virtual. Tendrá una lista de tareas, recordatorios 
+y un calendario para no olvidar nada y disponer del tiempo en época de exámenes, 
+deberes, lecciones etc. Organizar en etapas las tareas y asignar las actividades, 
+crear eventos y notas con el uso del calendario.
+
+Nuestra aplicación móvil se llamará Tagebuch por el motivo que está diseñada para 
+estudiantes y llevar un orden en su día a día para no pasar por alto nada. 
+ 
+Crear notas a diario que le permita modificar y visualizar las notas creadas 
+por el estudiante.
+
+Tagebuch constará de características sencillas, de fácil uso en una interfaz 
+didáctica que ofrezca una herramienta útil que usará el estudiante en sus actividades.
+  
+Hoy en día es indispensable realizar las tareas a tiempo y anotarlas es más fácil 
+gracias a Tagebuch, que anticipa.  
