@@ -6,28 +6,13 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
 
-
-    <ion-header>
-        <ion-toolbar>
-          <ion-buttons start>
-            <button ion-button icon-only>
-              <ion-icon name="create"></ion-icon>
-            </button>
-          </ion-buttons>
-          <ion-segment>
-            <ion-segment-button value="nuevo">
-              Nuevas tareas
-            </ion-segment-button>
-            <ion-segment-button value="completados">
-              Completados
-            </ion-segment-button>
-          </ion-segment>
-          <ion-buttons end>
-          </ion-buttons>
-        </ion-toolbar>
-      </ion-header>
+  <ion-list>
+    <button ion-item *ngFor="let note of notes" (click)="itemSelected(note)">
+      {{ note.title }}
+    </button>  
+  </ion-list>
 
   <br>
   <br>
