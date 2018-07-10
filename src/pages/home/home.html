@@ -9,31 +9,9 @@
 <ion-content>
 
   <ion-list>
-    <button ion-item *ngFor="let note of notes" (click)="itemSelected(note)">
+    <button ion-item *ngFor="let note of notes" (click)="goToDetail()">
       {{ note.title }}
     </button>  
   </ion-list>
-
-  <br>
-  <br>
-  <br>
-
-  <ion-list>
-      <ion-item>
-        <h2>Tagebuch</h2>
-        <p>Ten tus apuntes en un solo lugar, <br>
-          organizalos y siempre estaran para ti</p>
-      </ion-item>
-    </ion-list>
-
-  <ion-list>
-      <ion-item>
-        <h2>Cambios</h2>
-        <p>v0.0.1 <br>
-        -Creacion de Interfaz <br>
-        -Proponiendo ideas para app <br>
-        -Analizando funcionalidades</p>
-      </ion-item>
-    </ion-list>      
-
+  
 </ion-content>
