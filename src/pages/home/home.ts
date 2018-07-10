@@ -12,5 +12,3 @@ export class HomePage {
   }
 
 }
-
-https://blog.ng-classroom.com/blog/ionic2/fullcalendar/
