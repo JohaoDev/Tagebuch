@@ -7,7 +7,12 @@ export class NotesService{
         {id:2, title:'Nota 2', descripcion:'Descripcion Nota 2'},
         {id:3, title:'Nota 3', descripcion:'Descripcion Nota 3'}
     ];
+
     public getNotes(){
         return this.notes;
+    }
+
+    public getNote(id){
+        return this.notes.filter(function(e, i){ return e.id == id })[0] ││ {id:null, title:null, description:null};
     }
 }
