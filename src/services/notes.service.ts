@@ -21,9 +21,17 @@ export class NotesService{
     }
 
     public editNote(note){
-        for(let i; i < this.notes.length; i++){
+        for(let i = 0; i < this.notes.length; i++){
             if(this.notes[i].id == note){
                 this.notes[i] = note;
+            }
+        }
+    }
+
+    public deleteNote(note){
+        for(let i = 0; i < this.notes.length; i++){
+            if(this.notes[i].id == note){
+                this.notes.splice(i, 1);
             }
         }
     }
