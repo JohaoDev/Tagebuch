@@ -14,16 +14,25 @@ import { NotesService } from '../../services/notes.service';
   selector: 'page-detail',
   templateUrl: 'detail.html',
 })
+
 export class DetailPage {
   note = {id: null, title: null, description: null};
   id = null;
   constructor(public navCtrl: NavController, public navParams: NavParams, public notesService: NotesService) {
     this.id = navParams.get('id');
-    this.note = notesService.getNote(this.id);
+    if(this.id != 0){
+      this.note = notesService.getNote(this.id);
+    }
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DetailPage');
   }
 
+  addNote(){
+    this.note.id = Date.now();
+    this.notesService.createNote(this.note);
+
+    this.navCtrl.pop();
+  }
 }
