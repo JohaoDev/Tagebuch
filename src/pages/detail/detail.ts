@@ -42,7 +42,6 @@ export class DetailPage {
 
   deleteNote(){
     this.notesService.deleteNote(this.note);
-    alert("Nota eliminada");
-    this.navCtrl.pop();
+      this.navCtrl.pop();
   }
 }

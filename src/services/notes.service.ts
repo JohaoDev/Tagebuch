@@ -22,7 +22,7 @@ export class NotesService{
 
     public editNote(note){
         for(let i = 0; i < this.notes.length; i++){
-            if(this.notes[i].id == note){
+            if(this.notes[i].id == note.id){
                 this.notes[i] = note;
             }
         }
@@ -30,7 +30,7 @@ export class NotesService{
 
     public deleteNote(note){
         for(let i = 0; i < this.notes.length; i++){
-            if(this.notes[i].id == note){
+            if(this.notes[i].id == note.id){
                 this.notes.splice(i, 1);
             }
         }
