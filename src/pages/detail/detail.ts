@@ -32,7 +32,7 @@ export class DetailPage {
   addNote(){
     if(this.id != 0){
       this.notesService.editNote(this.note);
-      alert("Nota editada con éxito");
+      
     }else{
       this.note.id = Date.now();
       this.notesService.createNote(this.note);
