@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { NotesService } from '../../services/notes.service';
 import { DetailPage } from '../detail/detail';
-import { AngularFireDatabase, FirebaseListObservable } from "angularfire2/database";
+import { AngularFireDatabase } from "angularfire2/database";
 
 @Component({
   selector: 'page-home',

@@ -6,7 +6,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding class="fondo">
 
   <ion-list>
     <button ion-item *ngFor="let note of notes" (click)="goToDetail(note.id)">
@@ -16,4 +16,5 @@
   <div padding>
     <button ion-button block (click)="createNote()">Crear Nota</button>
   </div>
+
 </ion-content>
