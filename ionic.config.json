@@ -1,8 +1,8 @@
 {
   "name": "Tagebuch-Proyecto",
-  "app_id": "cb72fa7c",
-  "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "type": "ionic-angular",
+  "pro_id": "cb72fa7c"
 }
