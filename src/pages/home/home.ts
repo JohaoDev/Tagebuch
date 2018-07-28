@@ -2,7 +2,6 @@ import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { NotesService } from '../../services/notes.service';
 import { DetailPage } from '../detail/detail';
-import { AngularFireDatabase } from "angularfire2/database";
 
 @Component({
   selector: 'page-home',
@@ -12,7 +11,7 @@ import { AngularFireDatabase } from "angularfire2/database";
 export class HomePage {
     notes = [];
     @ViewChild("myNav") nav: NavController
-  constructor(public navCtrl: NavController, public notesService: NotesService, afDb: AngularFireDatabase) {
+  constructor(public navCtrl: NavController, public notesService: NotesService) {
       this.notes = notesService.getNotes();
   }
 

@@ -9,19 +9,6 @@ import { HomePage } from '../pages/home/home';
 import { NotesService } from '../services/notes.service'
 import { DetailPage } from '../pages/detail/detail';
 
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireAuthModule } from 'angularfire2/auth';
-
-export const firebaseConfig = {
-  apiKey: "AIzaSyC7bUN5H-8lWmgaGEsluD6JVVG1J0PI26M",
-  authDomain: "tagebuch-d0c25.firebaseapp.com",
-  databaseURL: "https://tagebuch-d0c25.firebaseio.com",
-  projectId: "tagebuch-d0c25",
-  storageBucket: "tagebuch-d0c25.appspot.com",
-  messagingSenderId: "318046979830"
-};
-
 @NgModule({
   declarations: [
     MyApp,
@@ -31,9 +18,6 @@ export const firebaseConfig = {
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule,
-    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
