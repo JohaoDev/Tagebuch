@@ -1,7 +1,30 @@
 page-home {
 
     .fondo {
-        background: linear-gradient(to top, #0404B4 0%, #FFFF00 100%);
+        background: linear-gradient(to top, rgb(17, 0, 250) 0%, rgb(253, 236, 2) 100%);
     }
 
+    .notas {
+        background-color: rgba(0, 0, 255, 0.007);
+    }
+
+    #splashscreen {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100000;
+        width:100%;
+      }
+      
+      .flb {
+        background-color: rgb(255, 255, 255);
+        height:100%;
+        width:100%;
+        animation: pulse 1s linear forwards;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 }

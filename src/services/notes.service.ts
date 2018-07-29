@@ -4,9 +4,9 @@ import { Injectable } from '@angular/core';
 export class NotesService{
     constructor(){}
     notes = [
-        {id:1, title:'Test 1', description:'Descripcion Nota 1'},
-        {id:2, title:'Test 2', description:'Descripcion Nota 2'},
-        {id:3, title:'Test 3', description:'Descripcion Nota 3'}
+        {id:1, title:'Lista de compras', description:'arroz, azucar, leche, huevos, cereal, pollo'},
+        {id:2, title:'Recordatorio', description:'Llevar a Bobby a la peluqueria'},
+        {id:3, title:'Amigos', description:'Salir con mis amigos el 3 de agosto al parque Metropolitano'}
     ];
 
     public getNotes(){

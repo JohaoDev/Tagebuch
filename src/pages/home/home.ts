@@ -9,10 +9,15 @@ import { DetailPage } from '../detail/detail';
 })
 
 export class HomePage {
+  splash = true;
     notes = [];
     @ViewChild("myNav") nav: NavController
   constructor(public navCtrl: NavController, public notesService: NotesService) {
       this.notes = notesService.getNotes();
+  }
+
+  ionViewDidLoad() {
+    setTimeout(() => this.splash = false, 3000);
   }
 
   public goToDetail(id){

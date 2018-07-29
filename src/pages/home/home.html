@@ -1,3 +1,9 @@
+<div id="splashscreen" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+      <img src="../../assets/imgs/1.png">
+  </div>
+</div>
+
 <ion-header>
   <ion-navbar color="dark">
     <ion-title>
@@ -9,7 +15,7 @@
 <ion-content padding class="fondo">
 
   <ion-list>
-    <button ion-item *ngFor="let note of notes" (click)="goToDetail(note.id)">
+    <button ion-item *ngFor="let note of notes" (click)="goToDetail(note.id)" class="notas">
       {{ note.title }}
     </button>  
   </ion-list>
