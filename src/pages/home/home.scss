@@ -1,11 +1,11 @@
 page-home {
 
     .fondo {
-        background: linear-gradient(to top, rgb(17, 0, 250) 0%, rgb(253, 236, 2) 100%);
+        background-image: url(../../assets/imgs/3.jpg);
     }
 
     .notas {
-        background-color: rgba(0, 0, 255, 0.007);
+        background-color: #2bff0000;
     }
 
     #splashscreen {
@@ -27,4 +27,5 @@ page-home {
         align-items: center;
         justify-content: center;
       }
+
 }
