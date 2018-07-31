@@ -7,7 +7,8 @@
 <ion-header>
   <ion-navbar color="dark">
     <ion-title>
-      Tagebuch
+      <ion-icon name="logo-octocat"></ion-icon>
+      Tagebuch Notas
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -17,7 +18,7 @@
   <ion-list>
     <button ion-item *ngFor="let note of notes" (click)="goToDetail(note.id)" class="notas">
       {{ note.title }}
-    </button>  
+    </button>
   </ion-list>
   <div padding>
     <button ion-button block (click)="createNote()">Crear Nota</button>
