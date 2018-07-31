@@ -5,7 +5,7 @@ page-home {
     }
 
     .notas {
-        background-color: #2bff0000;
+        background-color: #0000002a;
     }
 
     #splashscreen {
@@ -31,4 +31,16 @@ page-home {
       .blanco{
         background-color: rgb(255, 255, 255);
       }
+
+    .slide1 {
+        background-image: url(../../assets/imgs/slide1.jpg);
+    }
+
+    .slide2 {
+        background-image: url(../../assets/imgs/2.jpg);
+    }
+
+    .slide3 {
+        background-image: url(../../assets/imgs/3.jpg);
+    }
 }
