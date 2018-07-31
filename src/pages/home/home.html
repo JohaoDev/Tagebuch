@@ -17,6 +17,7 @@
 
   <ion-list>
     <button ion-item *ngFor="let note of notes" (click)="goToDetail(note.id)" class="notas">
+    <ion-icon name="attach"></ion-icon>
       {{ note.title }}
     </button>
   </ion-list>
