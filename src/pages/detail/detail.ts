@@ -19,7 +19,6 @@ export class DetailPage {
         .valueChanges().subscribe( note => {
           this.note = note;
         });
-        console.log(this.note);
     }
   }
 
