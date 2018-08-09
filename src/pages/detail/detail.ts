@@ -14,12 +14,16 @@ export class DetailPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public notesService: NotesService) {
     this.id = navParams.get('id');
     if(this.id != 0){
-      this.note = notesService.getNote(this.id);
+      //this.note = notesService.getNote(this.id);
+      notesService.getNote(this.id)
+        .valueChanges().subscribe( note => {
+          this.note = note;
+        });
+        console.log(this.note);
     }
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad DetailPage');
   }
 
   addNote(){
