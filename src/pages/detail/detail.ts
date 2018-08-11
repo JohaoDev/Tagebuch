@@ -9,15 +9,16 @@ import { NotesService } from '../../services/notes.service';
 })
 
 export class DetailPage {
-  note = {id: null, title: null, description: null};
+  note = {};
   id = null;
+  show=true;
   constructor(public navCtrl: NavController, public navParams: NavParams, public notesService: NotesService) {
     this.id = navParams.get('id');
     if(this.id != 0){
       //this.note = notesService.getNote(this.id);
       notesService.getNote(this.id)
-        .valueChanges().subscribe( note => {
-          this.note = note;
+        .valueChanges().subscribe( notas => {
+          this.note = notas;
         });
     }
   }
@@ -37,7 +38,8 @@ export class DetailPage {
   }
 
   deleteNote(){
+    this.show =false;
     this.notesService.deleteNote(this.note);
-      this.navCtrl.pop();
+    this.navCtrl.pop();
   }
 }

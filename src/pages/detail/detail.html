@@ -7,21 +7,19 @@
 </ion-header>
 
 
-<ion-content padding class="fondoDetalle">
+<ion-content padding class="fondoDetalle" *ngIf="show">
 
   <ion-list>
 
     <ion-item>
       <ion-label floating>
-          <ion-icon name="book"></ion-icon>
-        Título</ion-label>
+          <ion-icon name="book"></ion-icon>Título</ion-label>
       <ion-input type="text" [(ngModel)]="note.title"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>
-          <ion-icon name="clipboard"></ion-icon>
-        Descripción</ion-label>
+          <ion-icon name="clipboard"></ion-icon>Descripción</ion-label>
       <ion-textarea [(ngModel)]="note.description"></ion-textarea>
     </ion-item>
 
@@ -29,7 +27,10 @@
 
   <div padding>
   <button ion-button block (click)="addNote()">Guardar Nota</button>
-  <button *ngIf='id != 0' ion-button block (click)="deleteNote()" color="danger">Eliminar Nota</button>
+  </div>
+
+  <div padding>
+  <button ion-button block (click)="deleteNote(note)" color="danger" *ngIf="id!=0">Eliminar Nota</button>
   </div>
 
 </ion-content>
