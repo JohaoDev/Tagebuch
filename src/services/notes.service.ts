@@ -18,8 +18,8 @@ export class NotesService{
     }
 
     public createNote(note: Note){
-        this.afDB.database.ref('notas/'+note.id).set(note);
-        //this.notes.push(note);
+      this.afDB.database.ref('notas/'+note.id).set(note);
+      //this.notes.push(note);
     }
 
     public editNote(note: Note){

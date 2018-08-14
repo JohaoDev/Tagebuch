@@ -32,9 +32,16 @@ export class DetailPage {
       this.notesService.editNote(this.note);
 
     }else{
-      this.note.id = new Date().toDateString();
+      let fecha = new Date().toLocaleString(); // 2018/8/14 11:14:58
+      let re = /\ /gi;
+      let codigo = fecha.replace(re, ""); // 2018/8/1411:14:58
+      let re2 = /\//gi;
+      codigo = codigo.replace(re2, ""); // 201881411:14:58
+      let re3 = /\:/gi;
+      codigo = codigo.replace(re3, ""); // 2018814111458
+      this.note.id = codigo;
       this.notesService.createNote(this.note);
-  }
+    }
     this.navCtrl.pop();
   }
 
