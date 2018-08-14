@@ -10,7 +10,7 @@ import { NotesService } from '../services/notes.service'
 import { DetailPage } from '../pages/detail/detail';
 
 import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
 var config = {
